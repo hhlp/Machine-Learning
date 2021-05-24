@@ -42,7 +42,7 @@ for i in range(20):
     prediction = model.predict(x_test)
 
     print(f"Prediction:\t{vari[prediction[i]].ljust(10)}\tActual: {vari[y_test[i]].ljust(10)}\
-                        Accuracy: {str(round(accuracy * 100, 2)).ljust(5)}%\tData: {x_test[i]}")
+        Accuracy: {str(round(accuracy * 100, 2)).ljust(5)}%\tData: {x_test[i]}")
 
 print(f"\nHighest Accuracy: {round((best * 100), 2)}%")
 print(f"Worst Accuracy: {round((worst * 100), 2)}%")
